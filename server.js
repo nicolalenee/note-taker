@@ -1,15 +1,20 @@
 //import variables
 const express = require('express');
-const { notes }= require('./db/db.json');
-const fs = require('fs')
-const path = require('path');
+const fs = require('fs');
+const path = require('path')
+const { notes } = require('./db/db.json');
+// const apiRoutes = require('./routes/apiRoutes');
+// const htmlRoutes = require('./routes/htmlRoutes');
 const PORT = process.env.PORT || 3002;
 const app = express();
 
 //middleware
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
+// app.use('/api', apiRoutes);
+// app.use('/', htmlRoutes);
 app.use(express.static('public'));
+
 
 // function that filters through an array by the note's id
 function findById(id, notesArray) {
@@ -27,18 +32,18 @@ function createNewNote(body, notesArray) {
   );
   
   return note;
-}
+};
 
 // function that validates new entries into the notes array
 function validateNote(note) {
-  if(!note.title) {
+  if (!note.title) {
     return false;
   }
-  if(!note.text) {
+  if (!note.text) {
     return false;
   }
   return true;
-}
+};
 
 // get all notes 
 app.get('/api/notes', (req, res) => {
@@ -65,7 +70,7 @@ app.get('/api/notes/:id', (req, res) => {
 })
 
 // accept data to be used or stored server-side
-app.post('/api/notes', (req, res) => {
+app.post('api/notes', (req, res) => {
   // set id based on the next index
   req.body.id = notes.length.toString();
   // if note is missing inforrmation, send back 400 errorr
@@ -91,8 +96,9 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+
 // listener
-app.listen(3002, () => {
+app.listen(PORT, () => {
   console.log(`API server now live on PORT ${PORT}! `)
 })
 
