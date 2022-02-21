@@ -2,6 +2,7 @@ const express = require('express');
 const { notes }= require('./data/notes');
 
 const app = express();
+const PORT = process.env.PORT || 3002;
 
 function filterByQuery(query, notesArray) {
   let filteredResults = notesArray;
@@ -22,6 +23,6 @@ app.get('/api/notes', (req, res) => {
   res.json(results);
 })
 
-app.listen(3001, () => {
-  console.log(`API server now live on PORT 3001! `)
+app.listen(3002, () => {
+  console.log(`API server now live on PORT ${PORT}! `)
 })
