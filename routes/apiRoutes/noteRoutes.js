@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { findById, createNewNote, validateNote } = require('../../lib/notes');
-const { notes } = require('../../db/db.json')
+const { notes } = require('../../db/db.json');
+const { append } = require('express/lib/response');
 
 
 // get all notes 
@@ -40,5 +41,7 @@ router.post('/notes', (req, res) => {
     res.json(note);
   }
 });
+
+
 
 module.exports = router;

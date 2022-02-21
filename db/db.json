@@ -1,64 +1,24 @@
 {
     "notes": [
         {
-            "id": "0",
-            "title": "one",
-            "text": "this is the first sample text"
+            "title": "Mon Feb 21",
+            "text": "Today I went outside and walked my dog. He was very well behaved and did not bark at the other dogs.",
+            "id": "0"
         },
         {
-            "id": "1",
-            "title": "two",
-            "text": "this is the second example text."
+            "title": "Mood",
+            "text": "I am so proud of myself for catching up on my schoolwork. I was behind for a little bit, but after buckling down and getting busy things started to get a little bit easier for me.",
+            "id": "1"
         },
         {
-            "id": "2",
-            "title": "three",
-            "text": "this is the third example text."
+            "title": "Dinner",
+            "text": "Tonight I am having chicken and rice for dinner. It's a very simple dish, but it's that I know is going to turn out so good.",
+            "id": "2"
         },
         {
-            "id": "3",
-            "title": "four",
-            "text": "this is the fourth sample text"
-        },
-        {
-            "title": "new",
-            "text": "this is a new entry",
-            "id": "4"
-        },
-        {
-            "title": "new 2",
-            "text": "this is a second new entry",
-            "id": "5"
-        },
-        {
-            "title": "new 2",
-            "text": "this is a second new entry",
-            "id": "6"
-        },
-        {
-            "title": "masters",
-            "text": "and i oop",
-            "id": "7"
-        },
-        {
-            "title": "advice",
-            "text": "nah, i don't think you heard him! you will never get the key to his lock!",
-            "id": "8"
-        },
-        {
-            "title": "fjklajfdf",
-            "text": "flajfdaf",
-            "id": "9"
-        },
-        {
-            "title": "Miss You So",
-            "text": "This is one of Frank Ocean's best songs ever. It always brings me such intense emotion because I relate so hard. \"When my mind's telling me to forget you, what's gonna make me remember?\"",
-            "id": "10"
-        },
-        {
-            "title": "i need love",
-            "text": "another frank ocean classic",
-            "id": "11"
+            "title": "Relax",
+            "text": "Today I am going to treat myself to a nice day of relaxation after catching up on my work.",
+            "id": "3"
         }
     ]
 }
