@@ -14,7 +14,7 @@ This application was created with the Node.js framework. The Express.js framewor
 ## Installation 
 Once downloaded the application can be ran using the `npm start` command.
 The application can be accessed by visiting http://localhost:3002
-This application has also been deployed through heroku and can be viewed [!here][https://arcane-ravine-03617.herokuapp.com/] 
+This application has also been deployed through heroku and can be viewed here: https://arcane-ravine-03617.herokuapp.com/
 
 ## Questions 
 [Github❤️][https://github.com/nicolalenee/note-taker]  
