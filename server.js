@@ -6,8 +6,10 @@ const path = require('path');
 const PORT = process.env.PORT || 3002;
 const app = express();
 
+//middleware
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
+app.use(express.static('public'));
 
 // function that filters through an array by the note's id
 function findById(id, notesArray) {
@@ -74,6 +76,19 @@ app.post('/api/notes', (req, res) => {
     const note = createNewNote(req.body, notes);
     res.json(note);
   }
+});
+
+// serve up index page html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
+// serve up notes page html
+app.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+// serve up wildcard routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 // listener
