@@ -18,4 +18,4 @@ This application has also been deployed through heroku and can be viewed here: h
 
 ## Questions 
 [Github❤️][https://github.com/nicolalenee/note-taker]  
-[Live][https://arcane-ravine-03617.herokuapp.com/]
+[[Live](https://nicola-notetaker.herokuapp.com/)]
